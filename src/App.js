@@ -30,9 +30,9 @@ function App() {
   return (
     <div className='w-screen min-h-screen bg-black flex flex-col gap-16 items-center justify-start text-white'>
 
-      <p className="font-bold text-6xl lg:my-20 w-fit">StopWatch</p>
+      <p className="font-bold text-4xl lg:text-6xl lg:my-20 w-fit">StopWatch</p>
 
-      <div className='flex flex-col lg:flex-row gap-12 lg:gap-24 px-24 w-full'>
+      <div className='flex flex-col lg:flex-row gap-12 lg:gap-24 px-12 lg:px-24 w-full'>
 
         <div className='flex flex-1 flex-col items-center text-center gap-4 bg-[#111] p-12 rounded-2xl h-fit'>
 
@@ -47,7 +47,7 @@ function App() {
 
         </div>
 
-        <div className='flex flex-1 flex-col flex-wrap overflow-y-scroll text-center p-12 bg-[#111] rounded-2xl'>
+        <div className='flex flex-1 flex-col flex-wrap overflow-y-scroll text-center p-6 lg:p-12 bg-[#111] rounded-2xl'>
           <p className='font-bold text-xl mb-8 '>Laps</p>
           {laps.map((l, i) => (
             <p key={i}>{formatTime(l)}</p>
